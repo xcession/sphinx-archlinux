@@ -30,6 +30,62 @@ Verify internet connection with the ``ping`` command:
    3 packets transmitted, 3 packets received, 0.0% packet loss
    round-trip min/avg/max/stddev = 224.150/225.073/226.400/0.962 ms
 
+iwctl
+-----
+
+In live session, you can connect to Wi-Fi using the ``iwctl`` command.
+
+To get an interactive prompt:
+
+.. code-block:: bash
+
+  $ iwctl
+
+.. tip::
+
+  * In the ``iwctl`` prompt you can auto-complete commands and device names by pressing ``Tab``.
+  * To exit the interactive prompt, send EOF by pressing ``Ctrl+d``.
+  * You can use all commands as command line arguments without entering an interactive prompt. For example: ``iwctl device wlan0 show``.
+
+To list all available commands:
+
+.. code-block::
+
+   [iwd]# help
+
+Connect to a network
+~~~~~~~~~~~~~~~~~~~~
+
+List all Wi-Fi devices:
+
+.. code-block::
+
+   [iwd]# device list
+
+Scan for networks:
+
+.. code-block::
+
+   [iwd]# station <device> scan
+
+List all available networks:
+
+.. code-block::
+
+   [iwd]# station <device> get-networks
+
+Connect to a network:
+
+.. code-block::
+
+   [iwd]# station <device> connect <SSID>
+
+If a passphrase is required, you will prompt to enter it. Alternatively, you can supply it as a command line argument:
+
+.. code-block:: bash
+
+   $ iwctl --passphrase <passphrase> station <device> connect <SSID>
+
 Set Keyboard Layout
 -------------------
 
@@ -49,17 +105,21 @@ To set keyboard layout:
 
    The default console keymap is ``us``
 
-Verify UEFI (for UEFI Systems)
-------------------------------
+Verify the current Boot Mode
+----------------------------
 
-To verify UEFI:
+To verify the current boot mode, list the *efivars* directory:
 
 .. code-block:: bash
 
    # ls /sys/firmware/efi/efivars
 
-Update System Clock
--------------------
+.. note::
+
+   If the command shows the directory without error, then the system is booted in **UEFI** mode. If the directory does not exist, the system maybe booted in **BIOS** (or **Legacy**) mode.
+
+Update the System Clock
+-----------------------
 
 To ensure the system clock is accurate:
 
@@ -67,13 +127,19 @@ To ensure the system clock is accurate:
 
    # timedatectl set-ntp true
 
+.. note::
+
+   To check the service status, use ``timedatectl status``.
+
 Partition the Disk
 ==================
 
 List All Available Storage Devices
 ----------------------------------
 
-To list all available storage devices using the ``fdisk`` command:
+To list all available storage devices by use ``fdisk`` or ``lsblk`` command.
+
+1. List all available storage devices using the ``fdisk`` command:
 
 .. code-block:: bash
 
@@ -92,7 +158,7 @@ To list all available storage devices using the ``fdisk`` command:
    Device    Boot  Start      End  Sectors  Size Id Type
    /dev/sda1        2048   616447   614400  300M 83 Linux
 
-To list all available storage devices using the ``lsblk`` command:
+2. List all available storage devices using the ``lsblk`` command:
 
 .. code-block:: bash
 
@@ -108,6 +174,9 @@ To list all available storage devices using the ``lsblk`` command:
 
 Create Partition Table
 ----------------------
+
+..
+   TODO: Need more details.
 
 .. warning::
 
@@ -174,13 +243,13 @@ Format swap partition:
 Boot Partition
 ~~~~~~~~~~~~~~
 
-Legacy systems:
+For **Legacy systems** (**EXT2** filesystem):
 
 .. code-block:: bash
 
    # mkfs.ext2 -L BOOT /dev/sdX2
 
-UEFI systems:
+For **UEFI systems** (**FAT32** filesystem):
 
 .. code-block:: bash
 
@@ -188,12 +257,12 @@ UEFI systems:
 
 .. important::
 
-   Boot partition on the UEFI system has to be FAT32.
+   Boot partition on the UEFI system has to be **FAT32**.
 
 Root Partition
 ~~~~~~~~~~~~~~
 
-Format root partition:
+Format root partition (**EXT4** filesystem):
 
 .. code-block:: bash
 
@@ -202,7 +271,7 @@ Format root partition:
 Home Partition
 ~~~~~~~~~~~~~~
 
-Format home partition:
+Format home partition (**EXT4** filesystem):
 
 .. code-block:: bash
 
@@ -243,6 +312,8 @@ Installing
 Install the Base Packages
 -------------------------
 
+Install base packages and developer tools:
+
 .. code-block:: bash
 
    # pacstrap /mnt base base-devel
@@ -254,11 +325,11 @@ Install a Kernel
 
    # pacstrap /mnt linux linux-firmware
 
-Configure the System
-====================
-
 Fstab
 -----
+
+..
+   TODO: Need more details.
 
 .. code-block:: bash
 
@@ -266,6 +337,9 @@ Fstab
 
 Chroot
 ------
+
+..
+   TODO: Need more details.
 
 .. code-block:: bash
 
@@ -278,6 +352,9 @@ Install Vim
 .. code-block:: bash
 
    # pacman -S vim
+
+Configure the System
+====================
 
 Time Zone
 ---------
@@ -297,7 +374,7 @@ Run ``hwclock`` to generate ``/etc/adjtime``:
 Localization
 ------------
 
-Edit ``/etc/locale.gen``:
+Edit ``/etc/locale.gen`` and uncomment ``en_US.UTF-8``, ``UTF-8`` and other needed locales:
 
 .. code-block:: bash
 
@@ -316,33 +393,17 @@ Generate locale:
      en_US.ISO-8859-1... done
    Generation complete.
 
-To set locale system-wide, create or edit ``/etc/environment``:
-
-.. code-block:: bash
-
-   # vim /etc/environment
-
-Edit or add the following:
-
-.. code-block::
-
-   LANG=en_US.UTF-8
-
-Save and close the file.
-
-*(Optional)* Create or edit ``/etc/locale.conf``:
+Create ``/etc/locale.conf``:
 
 .. code-block:: bash
 
    # vim /etc/locale.conf
 
-Edit or add the following:
+And set the ``LANG`` variable:
 
 .. code-block::
 
    LANG=en_US.UTF-8
-
-Save and close the file.
 
 *(Optional)* Set persistent keyboard layout by create or edit ``/etc/vconsole.conf``:
 
@@ -350,16 +411,54 @@ Save and close the file.
 
    # vim /etc/vconsole.conf
 
-Edit or add the following:
+Then add the following:
 
 .. code-block::
 
    KEYMAP=uk
 
-Save and close the file.
-
 Network Configuration
 ---------------------
+
+Hostname
+~~~~~~~~
+
+Set the *hostname* (computer name) by edit ``/etc/hostname``:
+
+.. code-block:: bash
+
+   # vim /etc/hostname
+
+Then add *hostname*:
+
+.. code-block::
+
+   myhostname
+
+Edit the *hosts* file:
+
+.. code-block:: bash
+
+   # vim /etc/hosts
+
+Then add the following:
+
+.. code-block::
+
+   127.0.0.1    localhost
+   ::1          localhost
+   127.0.1.1    myhostname.localdomain    myhostname
+
+.. important::
+
+   Make sure ``myhostname`` is the same name that specified in ``/etc/hostname``.
+
+.. note::
+
+   If the system has a permanent IP address, it should be used instead of ``127.0.1.1``.
+
+NetworkManager
+~~~~~~~~~~~~~~
 
 Install NetworkManager:
 
@@ -379,45 +478,11 @@ Install the DHCP client:
 
    # pacman -S dhcpcd
 
-Enable the DHCP client:
+Enable the DHCP client system service:
 
 .. code-block:: bash
 
    # systemctl enable dhcpcd.service
-
-Set the *hostname* (computer name):
-
-.. code-block:: bash
-
-   # vim /etc/hostname
-
-Edit and add *hostname*:
-
-.. code-block::
-
-   myhostname
-
-Edit the *hosts* file:
-
-.. code-block:: bash
-
-   # vim /etc/hosts
-
-Edit and add the following:
-
-.. code-block::
-
-   127.0.0.1    localhost
-   ::1          localhost
-   127.0.1.1    myhostname.localdomain    myhostname
-
-.. important::
-
-   ``myhostname`` is the same name that specified in ``/etc/hostname``.
-
-.. note::
-
-   If the system has a permanent IP address, it should be used instead of ``127.0.1.1``.
 
 Initramfs
 =========
@@ -456,8 +521,8 @@ Generate ``grub`` config file:
 
    # grub-mkconfig -o /boot/grub/grub.cfg
 
-For Legacy Systems
-------------------
+For UEFI Systems
+----------------
 
 Install ``grub``:
 
@@ -530,15 +595,15 @@ Enable *wheel* group for ``sudo``:
 
    # visudo
 
+.. important::
+
+   In order to execute the ``visudo`` command, make sure ``vi`` is installed.
+
 Uncomment the following line:
 
 .. code-block::
 
    %wheel ALL=(ALL) ALL
-
-.. important::
-
-   In order to execute the ``visudo`` command, make sure ``vi`` is installed.
 
 Reboot
 ======
@@ -555,4 +620,3 @@ Restart the machine:
 
    # reboot
 
-Remove the installation media.

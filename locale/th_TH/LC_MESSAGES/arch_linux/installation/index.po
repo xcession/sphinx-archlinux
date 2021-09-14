@@ -1,0 +1,504 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Reverie Visuals
+# This file is distributed under the same license as the Arch Linux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arch Linux \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-15 04:52+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../arch_linux/installation/index.rst:3
+msgid "Installation"
+msgstr "การติดตั้ง"
+
+#: ../../arch_linux/installation/index.rst:7
+msgid ""
+"The ``#`` symbol in the shell prompt, indicate that you are execute "
+"commands as *root* user. While ``$`` symbol indicate that you are execute"
+" commands as *normal* user."
+msgstr ""
+"สัญลักษณ์ ``#`` ที่ shell prompt บ่งบอกว่าคุณกำลังใช้คำสั่ง เป็นผู้ใช้ "
+"*root* ในขณะที่สัญลักษณ์ ``$`` บอกว่าคุณกำลังใช้คำสั่ง เป็นผู้ใช้ "
+"*ทั่วไป*"
+
+#: ../../arch_linux/installation/index.rst:11
+msgid "Preparing"
+msgstr "เตรียมพร้อม"
+
+#: ../../arch_linux/installation/index.rst:14
+msgid "Verify Internet Connection"
+msgstr "ยืนยันการเชื่อมต่ออินเตอร์เนต"
+
+#: ../../arch_linux/installation/index.rst:16
+msgid "Verify internet connection with the ``ping`` command:"
+msgstr "ยืนยันการเชื่อมต่ออินเตอร์เนตด้วยคำสั่ง ``ping``:"
+
+#: ../../arch_linux/installation/index.rst:34
+msgid "iwctl"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:36
+msgid "In live session, you can connect to Wi-Fi using the ``iwctl`` command."
+msgstr "ใน live เซสชั่น คุณสามารถเชื่อมต่อ WiFi ด้วยคำสั่ง ``iwctl``"
+
+#: ../../arch_linux/installation/index.rst:38
+msgid "To get an interactive prompt:"
+msgstr "เข้า prompt แบบ interactive:"
+
+#: ../../arch_linux/installation/index.rst:46
+msgid ""
+"In the ``iwctl`` prompt you can auto-complete commands and device names "
+"by pressing ``Tab``."
+msgstr ""
+"ที่ prompt ของ ``iwctl`` คุณสามารถที่จะ auto-complete คำสั่งต่างๆ หรือ "
+"ชื่อของอุปกรณ์ ได้โดยการกดปุ่ม ``Tab``"
+
+#: ../../arch_linux/installation/index.rst:47
+msgid "To exit the interactive prompt, send EOF by pressing ``Ctrl+d``."
+msgstr "คุณสามารถออกจาก interactive prompt ได้ด้วยการกดปุ่ม ``Ctrl+d``"
+
+#: ../../arch_linux/installation/index.rst:48
+msgid ""
+"You can use all commands as command line arguments without entering an "
+"interactive prompt. For example: ``iwctl device wlan0 show``."
+msgstr ""
+"คุณสามารถใช้คำสั่งทั้งหมดในรูปแบบของ command line arguments "
+"โดยไม่จำเป็นที่จะต้องเข้า interactive prompt, ตัวอย่างเช่น: ``iwctl "
+"device wlan0 show``"
+
+#: ../../arch_linux/installation/index.rst:50
+msgid "To list all available commands:"
+msgstr "แสดงคำสั่งที่มีทั้งหมด:"
+
+#: ../../arch_linux/installation/index.rst:57
+msgid "Connect to a network"
+msgstr "การเชื่อมต่อเครือข่าย"
+
+#: ../../arch_linux/installation/index.rst:59
+msgid "List all Wi-Fi devices:"
+msgstr "แสดงอุปกรณ์ Wi-Fi ทั้งหมด:"
+
+#: ../../arch_linux/installation/index.rst:65
+msgid "Scan for networks:"
+msgstr "สแกนหาเครือข่าย:"
+
+#: ../../arch_linux/installation/index.rst:71
+msgid "List all available networks:"
+msgstr "แสดงเครือข่ายทั้งหมดที่พบ:"
+
+#: ../../arch_linux/installation/index.rst:77
+msgid "Connect to a network:"
+msgstr "เชื่อมต่อกับเครือข่าย:"
+
+#: ../../arch_linux/installation/index.rst:83
+msgid ""
+"If a passphrase is required, you will prompt to enter it. Alternatively, "
+"you can supply it as a command line argument:"
+msgstr ""
+"หากเครือข่ายนั้นมีการเข้ารหัส คุณจะถูกแจ้งให้ใส่รหัสผ่าน นอกจากนั้น "
+"คุณยังสามารถระบุรหัสผ่านในรูปแบบของ command line argument ก็ได้เช่นกัน:"
+
+#: ../../arch_linux/installation/index.rst:90
+msgid "Set Keyboard Layout"
+msgstr "การตั้งค่าคีย์บอร์ดเลย์เอาท์"
+
+#: ../../arch_linux/installation/index.rst:92
+msgid "List available keyboard layouts:"
+msgstr "แสดงคีย์บอร์ดเลย์เอาท์ทั้งหมด:"
+
+#: ../../arch_linux/installation/index.rst:98
+msgid "To set keyboard layout:"
+msgstr "ตั้งค่าคีย์บอร์ดเลย์เอาท์:"
+
+#: ../../arch_linux/installation/index.rst:106
+msgid "The default console keymap is ``us``"
+msgstr "``us`` เป็นค่าเริ่มต้นของคีย์บอร์ดเลย์เอาท์"
+
+#: ../../arch_linux/installation/index.rst:109
+msgid "Verify the current Boot Mode"
+msgstr "ยืนยันโหมดบูตปัจจุบัน"
+
+#: ../../arch_linux/installation/index.rst:111
+msgid "To verify the current boot mode, list the *efivars* directory:"
+msgstr "สามารถยืนยันโหมดบูตปัจจุบัน ได้โดยตรวจสอบไดเรกทอรี่ *efivars*:"
+
+#: ../../arch_linux/installation/index.rst:119
+msgid ""
+"If the command shows the directory without error, then the system is "
+"booted in **UEFI** mode. If the directory does not exist, the system "
+"maybe booted in **BIOS** (or **Legacy**) mode."
+msgstr ""
+"ถ้าคำสั่งแสดงไดเรกทอรี่ได้โดยไม่แสดงข้อผิดพลาด หมายความว่าระบบถูกบูต "
+"ในโหมด **UEFI**, ถ้าไม่พบไดเรกทอรี่ หมายความว่าระบบถูกบูต ในโหมด **BIOS**"
+" (หรือ **Legacy**)"
+
+#: ../../arch_linux/installation/index.rst:122
+msgid "Update the System Clock"
+msgstr "การอัพเดทนาฬิการะบบ"
+
+#: ../../arch_linux/installation/index.rst:124
+msgid "To ensure the system clock is accurate:"
+msgstr "เพื่อให้แน่ใจว่านาฬิการะบบนั้นถูกต้อง:"
+
+#: ../../arch_linux/installation/index.rst:132
+msgid "To check the service status, use ``timedatectl status``."
+msgstr "สามารถตรวจสอบสถานะปัจจุบัน ด้วยคำสั่ง ``timedatectl status``"
+
+#: ../../arch_linux/installation/index.rst:135
+msgid "Partition the Disk"
+msgstr "การจัดการดิสก์พาร์ทิชัน"
+
+#: ../../arch_linux/installation/index.rst:138
+msgid "List All Available Storage Devices"
+msgstr "การแสดงรายการของอุปกรณ์เก็บข้อมูล"
+
+#: ../../arch_linux/installation/index.rst:140
+msgid ""
+"To list all available storage devices by use ``fdisk`` or ``lsblk`` "
+"command."
+msgstr ""
+"สามารถแสดงรายการอุปกรณ์เก็บข้อมูลทั้งหมด ได้ด้วยคำสั่ง ``fdisk`` หรือ "
+"``lsblk``"
+
+#: ../../arch_linux/installation/index.rst:142
+msgid "List all available storage devices using the ``fdisk`` command:"
+msgstr "แสดงรายการอุปกรณ์เก็บข้อมูลทั้งหมด โดยใช้คำสั่ง ``fdisk``:"
+
+#: ../../arch_linux/installation/index.rst:161
+msgid "List all available storage devices using the ``lsblk`` command:"
+msgstr "แสดงรายการอุปกรณ์เก็บข้อมูลทั้งหมด โดยใช้คำสั่ง ``lsblk``:"
+
+#: ../../arch_linux/installation/index.rst:176
+msgid "Create Partition Table"
+msgstr "การสร้างพาร์ทิชันเทเบิ้ล"
+
+#: ../../arch_linux/installation/index.rst:183
+msgid "This will wipe everything!"
+msgstr "ข้อมูลทุกอย่างจะถูกลบ!"
+
+#: ../../arch_linux/installation/index.rst:185
+msgid "Partion the disk using ``fdisk`` command:"
+msgstr "จัดการพาร์ทิชัน โดยใช้คำสั่ง ``fdisk``:"
+
+#: ../../arch_linux/installation/index.rst:200
+msgid "Partition the disk using ``cfdisk`` command:"
+msgstr "จัดการพาร์ทิชัน โดยใช้คำสั่ง ``cfdisk``:"
+
+#: ../../arch_linux/installation/index.rst:207
+msgid "Partition Scheme"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:229
+msgid "Disk Format and Mount Filesystem"
+msgstr "การฟอร์แมตดิสก์ และการ Mount ระบบไฟล์"
+
+#: ../../arch_linux/installation/index.rst:232
+msgid "Format the Partitions"
+msgstr "การฟอร์แมตพาร์ทิชัน"
+
+#: ../../arch_linux/installation/index.rst:235
+msgid "Swap Partition"
+msgstr "พาร์ทิชัน Swap"
+
+#: ../../arch_linux/installation/index.rst:237
+msgid "Format swap partition:"
+msgstr "ฟอร์แมตพาร์ทิชัน Swap:"
+
+#: ../../arch_linux/installation/index.rst:244
+msgid "Boot Partition"
+msgstr "พาร์ทิชัน Boot"
+
+#: ../../arch_linux/installation/index.rst:246
+msgid "For **Legacy systems** (**EXT2** filesystem):"
+msgstr "สำหรับระบบ **Legacy** (ระบบไฟล์ **EXT2**):"
+
+#: ../../arch_linux/installation/index.rst:252
+msgid "For **UEFI systems** (**FAT32** filesystem):"
+msgstr "สำหรับระบบ **UEFI** (ระบบไฟล์ **FAT32**):"
+
+#: ../../arch_linux/installation/index.rst:260
+msgid "Boot partition on the UEFI system has to be **FAT32**."
+msgstr "พาร์ทิชัน Boot บนระบบ UEFI จำเป็นต้องฟอร์แมตเป็น **FAT32**"
+
+#: ../../arch_linux/installation/index.rst:263
+msgid "Root Partition"
+msgstr "พาร์ทิชัน Root"
+
+#: ../../arch_linux/installation/index.rst:265
+msgid "Format root partition (**EXT4** filesystem):"
+msgstr "ฟอร์แมตพาร์ทิชัน Root (ระบบไฟล์ **EXT4**):"
+
+#: ../../arch_linux/installation/index.rst:272
+msgid "Home Partition"
+msgstr "พาร์ทิชัน Home"
+
+#: ../../arch_linux/installation/index.rst:274
+msgid "Format home partition (**EXT4** filesystem):"
+msgstr "ฟอร์แมตพาร์ทิชัน Home (ระบบไฟล์ **EXT4**):"
+
+#: ../../arch_linux/installation/index.rst:281
+msgid "Mount the Filesystem"
+msgstr "การ Mount ระบบไฟล์"
+
+#: ../../arch_linux/installation/index.rst:283
+msgid "Mount swap partition:"
+msgstr "Mount พาร์ทิชัน Swap:"
+
+#: ../../arch_linux/installation/index.rst:289
+msgid "Mount root partition:"
+msgstr "Mount พาร์ทิชัน Root:"
+
+#: ../../arch_linux/installation/index.rst:295
+msgid "Create boot directory and mount boot partition:"
+msgstr "สร้างไดเรกทอรี่ boot และ Mount พาร์ทิชัน Boot:"
+
+#: ../../arch_linux/installation/index.rst:302
+msgid "Create home directory and mount home partition:"
+msgstr "สร้างไดเรกทอรี่ home และ Mount พาร์ทิชัน Home:"
+
+#: ../../arch_linux/installation/index.rst:310
+msgid "Installing"
+msgstr "การติดตั้ง"
+
+#: ../../arch_linux/installation/index.rst:313
+msgid "Install the Base Packages"
+msgstr "การติดตั้งแพ็กเกจพื้นฐาน"
+
+#: ../../arch_linux/installation/index.rst:315
+msgid "Install base packages and developer tools:"
+msgstr "ติดตั้งแพ็กเกจพื้นฐาน และเครื่องมือนักพัฒนาพื้นฐาน:"
+
+#: ../../arch_linux/installation/index.rst:322
+msgid "Install a Kernel"
+msgstr "ติดตั้งเคอร์เนล"
+
+#: ../../arch_linux/installation/index.rst:329
+msgid "Fstab"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:336
+msgid "Chroot"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:344
+msgid "Install Vim"
+msgstr "ติดตั้ง Vim"
+
+#: ../../arch_linux/installation/index.rst:351
+msgid "Configure the System"
+msgstr "การตั้งค่าระบบ"
+
+#: ../../arch_linux/installation/index.rst:354
+msgid "Time Zone"
+msgstr "เขตเวลา"
+
+#: ../../arch_linux/installation/index.rst:356
+msgid "Set the time zone:"
+msgstr "ตั้งค่าเขตเวลา:"
+
+#: ../../arch_linux/installation/index.rst:362
+msgid "Run ``hwclock`` to generate ``/etc/adjtime``:"
+msgstr "เรียกใช้คำสั่ง ``hwclock`` เพื่อสร้างไฟล์ ``/etc/adjtime``:"
+
+#: ../../arch_linux/installation/index.rst:369
+msgid "Localization"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:371
+msgid ""
+"Edit ``/etc/locale.gen`` and uncomment ``en_US.UTF-8``, ``UTF-8`` and "
+"other needed locales:"
+msgstr ""
+"แก้ไขไฟล์ ``/etc/locale.gen`` โดยปลด Comment ของ ``en_US.UTF-8``, ``UTF-8`` และ "
+"Locale อื่นๆ ที่ต้องการ:"
+
+#: ../../arch_linux/installation/index.rst:377
+msgid "Generate locale:"
+msgstr "สร้าง Locale:"
+
+#: ../../arch_linux/installation/index.rst:390
+msgid "Create ``/etc/locale.conf``:"
+msgstr "สร้างไฟล์ ``/etc/locale.conf``:"
+
+#: ../../arch_linux/installation/index.rst:396
+msgid "And set the ``LANG`` variable:"
+msgstr "และตั้งค่าตัวแปร ``LANG``:"
+
+#: ../../arch_linux/installation/index.rst:402
+msgid ""
+"*(Optional)* Set persistent keyboard layout by create or edit "
+"``/etc/vconsole.conf``:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:408
+#: ../../arch_linux/installation/index.rst:438
+msgid "Then add the following:"
+msgstr "ใส่ข้อมูลตามข้างล่างนี้:"
+
+#: ../../arch_linux/installation/index.rst:415
+msgid "Network Configuration"
+msgstr "การตั้งค่าเครือข่าย"
+
+#: ../../arch_linux/installation/index.rst:418
+msgid "Hostname"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:420
+msgid "Set the *hostname* (computer name) by edit ``/etc/hostname``:"
+msgstr "ตั้ง *hostname* (ชื่อเครื่อง) โดยแก้ไขไฟล์ ``/etc/hostname``:"
+
+#: ../../arch_linux/installation/index.rst:426
+msgid "Then add *hostname*:"
+msgstr "และใส่ *hostname*:"
+
+#: ../../arch_linux/installation/index.rst:432
+msgid "Edit the *hosts* file:"
+msgstr "แก้ไขไฟล์ *hosts*:"
+
+#: ../../arch_linux/installation/index.rst:448
+msgid ""
+"Make sure ``myhostname`` is the same name that specified in "
+"``/etc/hostname``."
+msgstr ""
+"ให้แน่ใจว่า ``myhostname`` นั้นตรงกับที่ระบุไว้ในไฟล์ "
+"``/etc/hostname``"
+
+#: ../../arch_linux/installation/index.rst:452
+msgid ""
+"If the system has a permanent IP address, it should be used instead of "
+"``127.0.1.1``."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:455
+msgid "NetworkManager"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:457
+msgid "Install NetworkManager:"
+msgstr "ติดตั้ง NetworkManager:"
+
+#: ../../arch_linux/installation/index.rst:463
+msgid "Enable the NetworkManager system service:"
+msgstr "เปิดใช้งานเซอร์วิส NetworkManager:"
+
+#: ../../arch_linux/installation/index.rst:469
+msgid "Install the DHCP client:"
+msgstr "ติดตั้ง DHCP client:"
+
+#: ../../arch_linux/installation/index.rst:475
+msgid "Enable the DHCP client system service:"
+msgstr "เปิดใช้งานเซอร์วิส DHCP client"
+
+#: ../../arch_linux/installation/index.rst:482
+msgid "Initramfs"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:486
+msgid ""
+"Creating a new initramfs usually not required, because ``mkinitcpio`` was"
+" run on installation of the kernel package with ``basestrap``."
+msgstr ""
+"การสร้าง initramfs ใหม่นี้ โดยปกติแล้วไม่จำเป็น เพราะคำสั่ง ``mkinitcpio`` จะถูก"
+" เรียกใช้หลังจากการติดตั้งแพ็จเกจเคอร์เนล โดยคำสั่ง ``basestrap``"
+
+#: ../../arch_linux/installation/index.rst:488
+msgid "To re-create the initramfs image:"
+msgstr "หากต้องการสร้างอิมเมจของ initramfs อีกครั้ง:"
+
+#: ../../arch_linux/installation/index.rst:495
+msgid "Install the Bootloader (GRUB)"
+msgstr "การติดตั้ง Bootloader (GRUB)"
+
+#: ../../arch_linux/installation/index.rst:498
+msgid "For Legacy Systems"
+msgstr "สำหรับระบบ Legacy"
+
+#: ../../arch_linux/installation/index.rst:500
+#: ../../arch_linux/installation/index.rst:521
+msgid "Install ``grub``:"
+msgstr "ติดตั้ง ``grub``:"
+
+#: ../../arch_linux/installation/index.rst:506
+#: ../../arch_linux/installation/index.rst:527
+msgid "Install bootloader:"
+msgstr "ติดตั้ง bootloader:"
+
+#: ../../arch_linux/installation/index.rst:512
+#: ../../arch_linux/installation/index.rst:533
+msgid "Generate ``grub`` config file:"
+msgstr "สร้างไฟล์คอนฟิกของ ``grub``:"
+
+#: ../../arch_linux/installation/index.rst:519
+msgid "For UEFI Systems"
+msgstr "สำหรับระบบ UEFI"
+
+#: ../../arch_linux/installation/index.rst:540
+msgid "Set the Root Password"
+msgstr "การตั้งรหัสผ่าน Root"
+
+#: ../../arch_linux/installation/index.rst:542
+msgid "To set root password:"
+msgstr "ตั้งรหัสผ่าน Root:"
+
+#: ../../arch_linux/installation/index.rst:549
+msgid "Create a New User"
+msgstr "การสร้างผู้ใช้ใหม่"
+
+#: ../../arch_linux/installation/index.rst:551
+msgid "To create a new user:"
+msgstr "สร้างผู้ใช้ใหม่:"
+
+#: ../../arch_linux/installation/index.rst:557
+msgid "Set password of the new user:"
+msgstr "ตั้งรหัสผ่านสำหรับผู้ใช้ใหม่:"
+
+#: ../../arch_linux/installation/index.rst:563
+msgid "Add new user group(s):"
+msgstr "เพิ่มกลุ่มให้ผู้ใช้ใหม่:"
+
+#: ../../arch_linux/installation/index.rst:569
+msgid "To verify user's group(s):"
+msgstr "ยืนยันกลุ่มผู้ใช้:"
+
+#: ../../arch_linux/installation/index.rst:577
+msgid "Replace ``<newuser>`` with your user name."
+msgstr "แทนที่ ``<newuser>`` ด้วยชื่อผู้ใช้ของคุณ"
+
+#: ../../arch_linux/installation/index.rst:580
+msgid "Install sudo"
+msgstr "ติดตั้ง sudo"
+
+#: ../../arch_linux/installation/index.rst:586
+msgid "Enable *wheel* group for ``sudo``:"
+msgstr "เปิดใช้กลุ่มผู้ใช้ *wheel* สำหรับ ``sudo``:"
+
+#: ../../arch_linux/installation/index.rst:592
+msgid "Uncomment the following line:"
+msgstr "ปลด Comment บรรทัดต่อไปนี้:"
+
+#: ../../arch_linux/installation/index.rst:600
+msgid "In order to execute the ``visudo`` command, make sure ``vi`` is installed."
+msgstr "ในการที่จะเรียกใช้คำสั่ง ``visudo`` ได้นั้น จำเป็นที่จะต้องติดตั้ง ``vi`` ด้วย"
+
+#: ../../arch_linux/installation/index.rst:603
+msgid "Reboot"
+msgstr "เริ่มระบบใหม่"
+
+#: ../../arch_linux/installation/index.rst:605
+msgid "Exit the ``chroot`` environment:"
+msgstr "ออกจาก ``chroot``:"
+
+#: ../../arch_linux/installation/index.rst:611
+msgid "Restart the machine:"
+msgstr "เริ่มระบบใหม่:"
+

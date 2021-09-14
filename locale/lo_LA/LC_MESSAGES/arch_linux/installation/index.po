@@ -1,0 +1,486 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Reverie Visuals
+# This file is distributed under the same license as the Arch Linux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arch Linux \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-15 04:52+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../arch_linux/installation/index.rst:3
+msgid "Installation"
+msgstr "ການຕິດຕັ້ງ"
+
+#: ../../arch_linux/installation/index.rst:7
+msgid ""
+"The ``#`` symbol in the shell prompt, indicate that you are execute "
+"commands as *root* user. While ``$`` symbol indicate that you are execute"
+" commands as *normal* user."
+msgstr ""
+"ສັນຍາລັກ ``#`` ໃນ shell prompt ຊີ້ບອກວ່າທ່ານກໍາລັງໃຊ້ຄຳສັ່ງເປັນຜູ້ໃຊ້ "
+"*root* ໃນຂະນະທີ່ສັນຍາລັກ ``$`` ຊີ້ບອກວ່າທ່ານກໍາລັງໃຊ້ຄຳສັ່ງເປັນຜູ້ໃຊ້ "
+"*ປົກກະຕິ*"
+
+#: ../../arch_linux/installation/index.rst:11
+msgid "Preparing"
+msgstr "ການກະກຽມ"
+
+#: ../../arch_linux/installation/index.rst:14
+msgid "Verify Internet Connection"
+msgstr "ກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ"
+
+#: ../../arch_linux/installation/index.rst:16
+msgid "Verify internet connection with the ``ping`` command:"
+msgstr "ກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດດ້ວຍຄໍາສັ່ງ ``ping``:"
+
+#: ../../arch_linux/installation/index.rst:34
+msgid "iwctl"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:36
+msgid "In live session, you can connect to Wi-Fi using the ``iwctl`` command."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:38
+msgid "To get an interactive prompt:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:46
+msgid ""
+"In the ``iwctl`` prompt you can auto-complete commands and device names "
+"by pressing ``Tab``."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:47
+msgid "To exit the interactive prompt, send EOF by pressing ``Ctrl+d``."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:48
+msgid ""
+"You can use all commands as command line arguments without entering an "
+"interactive prompt. For example: ``iwctl device wlan0 show``."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:50
+msgid "To list all available commands:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:57
+msgid "Connect to a network"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:59
+msgid "List all Wi-Fi devices:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:65
+msgid "Scan for networks:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:71
+msgid "List all available networks:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:77
+msgid "Connect to a network:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:83
+msgid ""
+"If a passphrase is required, you will prompt to enter it. Alternatively, "
+"you can supply it as a command line argument:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:90
+msgid "Set Keyboard Layout"
+msgstr "ຕັ້ງຮູບແບບແປ້ນພິມ"
+
+#: ../../arch_linux/installation/index.rst:92
+msgid "List available keyboard layouts:"
+msgstr "ສະແດງຮູບແບບແປ້ນພິມທັງຫມົດທີ່ມີ:"
+
+#: ../../arch_linux/installation/index.rst:98
+msgid "To set keyboard layout:"
+msgstr "ຕັ້ງຮູບແບບແປ້ນພິມ:"
+
+#: ../../arch_linux/installation/index.rst:106
+msgid "The default console keymap is ``us``"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:109
+msgid "Verify the current Boot Mode"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:111
+msgid "To verify the current boot mode, list the *efivars* directory:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:119
+msgid ""
+"If the command shows the directory without error, then the system is "
+"booted in **UEFI** mode. If the directory does not exist, the system "
+"maybe booted in **BIOS** (or **Legacy**) mode."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:122
+msgid "Update the System Clock"
+msgstr "Update ໂມງລະບົບ"
+
+#: ../../arch_linux/installation/index.rst:124
+msgid "To ensure the system clock is accurate:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:132
+msgid "To check the service status, use ``timedatectl status``."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:135
+msgid "Partition the Disk"
+msgstr "ການແບ່ງ partition"
+
+#: ../../arch_linux/installation/index.rst:138
+msgid "List All Available Storage Devices"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:140
+msgid ""
+"To list all available storage devices by use ``fdisk`` or ``lsblk`` "
+"command."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:142
+msgid "List all available storage devices using the ``fdisk`` command:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:161
+msgid "List all available storage devices using the ``lsblk`` command:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:176
+msgid "Create Partition Table"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:183
+msgid "This will wipe everything!"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:185
+msgid "Partion the disk using ``fdisk`` command:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:200
+msgid "Partition the disk using ``cfdisk`` command:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:207
+msgid "Partition Scheme"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:229
+msgid "Disk Format and Mount Filesystem"
+msgstr "ການ format disk ແລະການ mount ລະບົບໄຟລ"
+
+#: ../../arch_linux/installation/index.rst:232
+msgid "Format the Partitions"
+msgstr "ການ format partition"
+
+#: ../../arch_linux/installation/index.rst:235
+msgid "Swap Partition"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:237
+msgid "Format swap partition:"
+msgstr "ການ format swap partition:"
+
+#: ../../arch_linux/installation/index.rst:244
+msgid "Boot Partition"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:246
+msgid "For **Legacy systems** (**EXT2** filesystem):"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:252
+msgid "For **UEFI systems** (**FAT32** filesystem):"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:260
+msgid "Boot partition on the UEFI system has to be **FAT32**."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:263
+msgid "Root Partition"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:265
+msgid "Format root partition (**EXT4** filesystem):"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:272
+msgid "Home Partition"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:274
+msgid "Format home partition (**EXT4** filesystem):"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:281
+msgid "Mount the Filesystem"
+msgstr "ການ mount ລະບົບໄຟລ"
+
+#: ../../arch_linux/installation/index.rst:283
+msgid "Mount swap partition:"
+msgstr "ການ mount swap partition:"
+
+#: ../../arch_linux/installation/index.rst:289
+msgid "Mount root partition:"
+msgstr "ການ mount root partition:"
+
+#: ../../arch_linux/installation/index.rst:295
+msgid "Create boot directory and mount boot partition:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:302
+msgid "Create home directory and mount home partition:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:310
+msgid "Installing"
+msgstr "ຕິດຕັ້ງ"
+
+#: ../../arch_linux/installation/index.rst:313
+msgid "Install the Base Packages"
+msgstr "ຕິດຕັ້ງແພັກເກດພື້ນຖານ"
+
+#: ../../arch_linux/installation/index.rst:315
+msgid "Install base packages and developer tools:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:322
+msgid "Install a Kernel"
+msgstr "ຕິດຕັ້ງ Kernel"
+
+#: ../../arch_linux/installation/index.rst:329
+msgid "Fstab"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:336
+msgid "Chroot"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:344
+msgid "Install Vim"
+msgstr "ຕິດຕັ້ງ Vim"
+
+#: ../../arch_linux/installation/index.rst:351
+msgid "Configure the System"
+msgstr "Config ລະບົບ"
+
+#: ../../arch_linux/installation/index.rst:354
+msgid "Time Zone"
+msgstr "ເຂດເວລາ"
+
+#: ../../arch_linux/installation/index.rst:356
+msgid "Set the time zone:"
+msgstr "ຕັ້ງເຂດເວລາ:"
+
+#: ../../arch_linux/installation/index.rst:362
+msgid "Run ``hwclock`` to generate ``/etc/adjtime``:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:369
+msgid "Localization"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:371
+msgid ""
+"Edit ``/etc/locale.gen`` and uncomment ``en_US.UTF-8``, ``UTF-8`` and "
+"other needed locales:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:377
+msgid "Generate locale:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:390
+msgid "Create ``/etc/locale.conf``:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:396
+msgid "And set the ``LANG`` variable:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:402
+msgid ""
+"*(Optional)* Set persistent keyboard layout by create or edit "
+"``/etc/vconsole.conf``:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:408
+#: ../../arch_linux/installation/index.rst:438
+msgid "Then add the following:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:415
+msgid "Network Configuration"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:418
+msgid "Hostname"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:420
+msgid "Set the *hostname* (computer name) by edit ``/etc/hostname``:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:426
+msgid "Then add *hostname*:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:432
+msgid "Edit the *hosts* file:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:448
+msgid ""
+"Make sure ``myhostname`` is the same name that specified in "
+"``/etc/hostname``."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:452
+msgid ""
+"If the system has a permanent IP address, it should be used instead of "
+"``127.0.1.1``."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:455
+msgid "NetworkManager"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:457
+msgid "Install NetworkManager:"
+msgstr "ຕິດຕັ້ງ NetworkManager:"
+
+#: ../../arch_linux/installation/index.rst:463
+msgid "Enable the NetworkManager system service:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:469
+msgid "Install the DHCP client:"
+msgstr "ຕິດຕັ້ງ DHCP client:"
+
+#: ../../arch_linux/installation/index.rst:475
+msgid "Enable the DHCP client system service:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:482
+msgid "Initramfs"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:486
+msgid ""
+"Creating a new initramfs usually not required, because ``mkinitcpio`` was"
+" run on installation of the kernel package with ``basestrap``."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:488
+msgid "To re-create the initramfs image:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:495
+msgid "Install the Bootloader (GRUB)"
+msgstr "ຕິດຕັ້ງ Bootloader (GRUB)"
+
+#: ../../arch_linux/installation/index.rst:498
+msgid "For Legacy Systems"
+msgstr "ສໍາລັບລະບົບ Legacy"
+
+#: ../../arch_linux/installation/index.rst:500
+#: ../../arch_linux/installation/index.rst:521
+msgid "Install ``grub``:"
+msgstr "ຕິດຕັ້ງ ``grub``:"
+
+#: ../../arch_linux/installation/index.rst:506
+#: ../../arch_linux/installation/index.rst:527
+msgid "Install bootloader:"
+msgstr "ຕິດຕັ້ງ bootloader:"
+
+#: ../../arch_linux/installation/index.rst:512
+#: ../../arch_linux/installation/index.rst:533
+msgid "Generate ``grub`` config file:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:519
+msgid "For UEFI Systems"
+msgstr "ສໍາລັບລະບົບ Legacy"
+
+#: ../../arch_linux/installation/index.rst:540
+msgid "Set the Root Password"
+msgstr "ຕັ້ງລະຫັດຜ່ານ root"
+
+#: ../../arch_linux/installation/index.rst:542
+msgid "To set root password:"
+msgstr "ຕັ້ງລະຫັດຜ່ານ root:"
+
+#: ../../arch_linux/installation/index.rst:549
+msgid "Create a New User"
+msgstr "ສ້າງຜູ້ໃຊ້ໃຫມ່"
+
+#: ../../arch_linux/installation/index.rst:551
+msgid "To create a new user:"
+msgstr "ສ້າງຜູ້ໃຊ້ໃຫມ່:"
+
+#: ../../arch_linux/installation/index.rst:557
+msgid "Set password of the new user:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:563
+msgid "Add new user group(s):"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:569
+msgid "To verify user's group(s):"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:577
+msgid "Replace ``<newuser>`` with your user name."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:580
+msgid "Install sudo"
+msgstr "ຕິດຕັ້ງ sudo"
+
+#: ../../arch_linux/installation/index.rst:586
+msgid "Enable *wheel* group for ``sudo``:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:592
+msgid "Uncomment the following line:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:600
+msgid "In order to execute the ``visudo`` command, make sure ``vi`` is installed."
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:603
+msgid "Reboot"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:605
+msgid "Exit the ``chroot`` environment:"
+msgstr ""
+
+#: ../../arch_linux/installation/index.rst:611
+msgid "Restart the machine:"
+msgstr ""
+

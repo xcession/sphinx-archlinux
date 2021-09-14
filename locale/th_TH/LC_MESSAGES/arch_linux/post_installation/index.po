@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Reverie Visuals
+# This file is distributed under the same license as the Arch Linux package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arch Linux \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-13 00:59+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../arch_linux/post_installation/index.rst:3
+msgid "Post Installation"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:6
+msgid "Microcode"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:8
+msgid ""
+"Processor manufacturers release stability and security updates to the "
+"processor microcode. These updates provide bug fixes can be critical to "
+"the stability of your system."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:10
+msgid ""
+"All users with an AMD or Intel CPU should install the microcode updates "
+"to ensure system stability."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:13
+msgid "Installation"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:15
+msgid "For AMD processors:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:21
+msgid "For Intel processors:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:28
+msgid "Early Microcode Loading (GRUB)"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:30
+msgid ""
+"``grub-mkconfig`` will automatically detect the microcode update and "
+"configure GRUB appropriately."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:32
+msgid ""
+"After install the microcode package, regenerate the GRUB config to "
+"activate loading the microcode update:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:39
+msgid "Display Driver"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:42
+msgid "Identify the Graphic Card"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:44
+msgid "To identify the graphic card:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:58
+msgid "The *Subsystem* output shows the specific model."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:61
+msgid "Install the Video Driver"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:63
+msgid "For a complete list of open-source video drivers:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:69
+msgid "Intel:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:75
+msgid "AMD:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:81
+msgid "Nvidia:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:89
+msgid ""
+"Xorg will use ``xf86-video-fbdev`` and ``xf86-video-vesa`` as a fallback "
+"driver."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:92
+msgid "Audio"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:95
+msgid "ALSA"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:97
+msgid ""
+"The **Advanced Linux Sound Architecture** (ALSA) provides kernel driven "
+"sound card drivers. It replaces the original Open Sound System (OSS)."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:99
+msgid ""
+"ALSA is a set of built-in Linux kernel modules. Therefore, manual "
+"installation is not necessary."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:102
+msgid "ALSA Utilities"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:104
+msgid ""
+"This contains (among other utilities) the ``alsamixer`` and ``amixer`` "
+"utilities."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:106
+msgid ""
+"``amixer`` is a shell command to change audio settings, while "
+"``alsamixer`` provides a more intuitive ncurses based interface for audio"
+" device configuration."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:109
+msgid "Unmute the Channels"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:111
+msgid "By default ALSA has all channels muted. Those have to be unmuted manually."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:113
+msgid "Unmute with ``amixer``:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:121
+msgid "Unmute with ``alsamixer``:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:129
+msgid ""
+"The **MM** label below a channel indicates that the channel is muted, and"
+" **00** indicates that it is open."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:131
+msgid ""
+"Scroll to **Master** and **PCM** channels with the ``arrow`` keys and "
+"unmute them by pressing the ``m`` key."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:134
+msgid "Display Server"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:137
+msgid "Install Xorg"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:139
+msgid "To install Xorg (Full):"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:145
+msgid "To install Xorg (Minimal)"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:152
+msgid "Install Xinit"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:154
+msgid "To install Xinit:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:160
+msgid "Copy the Xinit sample configuration file to home directory:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:167
+msgid "Install WM or DE"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:170
+msgid "Window Manager (WM)"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:172
+msgid "https://wiki.archlinux.org/index.php/Window_manager"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:174
+msgid ""
+"The window manager is responsible for the placement of the windows, how "
+"they are arranged on the screen, how they interact with each other, and "
+"their appearance."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:176
+msgid "There are many windows manager out there, for example:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:178
+msgid "i3"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:179
+msgid "DWM"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:180
+msgid "BSPWM"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:183
+msgid "Desktop Environment (DE)"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:185
+msgid "https://wiki.archlinux.org/index.php/Desktop_environment"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:187
+msgid ""
+"Building the window manager, the desktop environment comes with a suite "
+"of apps. A text editor, calendar, process viewer, file manager and other "
+"essential tools."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:189
+msgid "Some of the most popular full-blown desktop environment in Linux are:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:191
+msgid "GNOME"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:192
+msgid "KDE"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:193
+msgid "XFCE"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:196
+msgid "Display Manager"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:198
+msgid "https://wiki.archlinux.org/index.php/Display_manager"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:200
+msgid ""
+"A display manager, or login manager, is typically a graphical user "
+"interface that displayed at the end of the boot process in place of the "
+"default shell."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:203
+msgid "Z Shell (Zsh)"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:206
+msgid "Identify the Current Shell"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:208
+msgid "Identify current shell by ``echo`` the ``$SHELL`` variable:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:218
+msgid "Or by the ``$0`` variable:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:229
+msgid "Install the Z Shell"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:231
+msgid "To install Zsh:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:238
+msgid "Set Default Shell"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:240
+msgid "To list all installed shells:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:251
+msgid "To set current user's default shell:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:263
+msgid "To set Zsh as default shell:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:270
+msgid "OpenSSH"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:273
+msgid "Install OpenSSH"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:275
+msgid "To install OpenSSH:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:282
+msgid "Disable Root Login Over SSH"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:284
+msgid "Edit ``/etc/ssh/sshd_config`` to disable root login over SSH:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:292
+msgid ""
+"*(Optional)* Uncomment the *BANNER* option and edit ``/etc/issue`` for a "
+"nice MOTD message."
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:295
+msgid "Enable and Start the SSH Daemon"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:297
+msgid "To start the SSH daemon:"
+msgstr ""
+
+#: ../../arch_linux/post_installation/index.rst:303
+msgid "To auto start the SSH daemon:"
+msgstr ""
+
