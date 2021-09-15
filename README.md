@@ -2,11 +2,12 @@
 
 Arch Linux Documentation built using Sphinx and reStructuredText.
 
-## Prerequisites
+## Dependencies
 
-* Python + Pip
+* [Python 3](https://www.python.org)
+* [GNU Make](https://www.gnu.org/software/make)
 * [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html)
-* [Read the Docs Sphinx Theme](https://github.com/readthedocs/sphinx_rtd_theme)
+* [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io)
 
 ## Getting Started
 
@@ -99,6 +100,7 @@ $ sphinx-autobuild -b html . _build/html -D language=th_TH
 * [Installing Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html)
 * [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
 * [sphinx-autobuild](https://github.com/executablebooks/sphinx-autobuild)
+* [Sphinx Configuration - Language](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language)
 
 ## License
 [MIT](/LICENSE)
